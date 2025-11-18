@@ -142,3 +142,60 @@ console.log(c2);
 
 
 //spread & Rest Operators in JavaScript
+// Object Destructuring
+// const person = {
+//   name: "Amit",
+//   age: 19,
+//   city: "Delhi"
+// };
+
+// const { name, age, city } = person;
+
+// console.log(name); // Amit
+// console.log(age);  // 19
+// console.log(city); // Delhi
+
+//Nested Destructuring
+// const student = {
+//   name: "Reena",
+//   marks: {
+//     maths: 90,
+//     science: 88
+//   }
+// };
+
+// const { marks: { maths, science } } = student;
+
+// console.log(maths);   // 90
+// console.log(science); // 88
+
+
+
+// Function Parameter Destructuring
+
+// function display({ name, age }) 
+// {
+//   console.log(name);
+//   console.log(age);
+// }
+
+// const person = { name: "Asha", age: 22 };
+// display(person);
+
+
+// const numbers = [1, 2, 3];
+// console.log(...numbers);   
+
+
+// Basic Use of ?. for Safe Property Access 
+
+// const student = {
+//   name: "Ani",
+//   marks: {
+//     math: 95,
+//     science: 88
+//   }
+// };
+
+// console.log(student?.marks?.math);  
+// // 95
