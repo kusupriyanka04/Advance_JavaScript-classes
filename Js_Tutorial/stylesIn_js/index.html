@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #special{
+            color: blue;
+        }
+        .one{
+            background-color: blue;
+        }
+        .two{
+            border: 5px yellow solid;
+        }
+        .three{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="special" class="one">
+        This is division one
+    </div>
+    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8="
+     alt="" id="img1">
+
+     Name: <input type="text" id="fn">
+</body>
+<!-- <script>
+    var x = document.getElementById("special")
+    x.style.color = "pink"
+    x.style.border = "black 3px dotted"
+    console.log(x.style);
+</script> -->
+
+<script>
+    var x = document.getElementById("special")
+
+   console.log(x.getAttribute('id')) // getting any attribute with id
+   x.setAttribute("class", "one")  // setting class attribute through setAttribute
+   console.log(x.getAttribute('class'))
+
+   var x = document.getElementById("img1")
+
+   x.style.width = "100px"  // using javascript sizing image 
+   x.style.height = "100px"
+   console.log(x.getAttribute('src'))   // getting image src 
+
+   x.setAttribute('src', 'https://rukminim2.flixcart.com/image/300/300/xif0q/painting/j/j/8/10-1-gautam-buddha-photo-frame-crowdhall-original-imah5g2dcv8kqgaa.jpeg')
+//    changing image src through different image src
+
+   var x = document.getElementById("fn")
+    console.log(x.getAttribute('value'))  // output null because there is no value empty
+    x.setAttribute('value', 'xyz')  // setting value xyz
+
+    // setAttribute em chesthadhi ante already unnadhi tisesi kothadhani add chesthadhi
+
+    // want to add new class
+
+    var x = document.getElementById("special")
+    x.setAttribute('class', 'two')  // edhi em chesthadhi already unna dhani tisesi kothadhi petadhadhi  ala kakunda undali ante
+   // kotha class two add cheyali ante
+
+    x.classList.add('two')  // already unna dhaniki kothadhi add avuthundhi
+    console.log(x.classList)
+
+    x.classList.add('three')
+
+    // how to remove one class
+
+    x.classList.remove('one')
+</script>
+</html>
